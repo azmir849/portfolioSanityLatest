@@ -26,6 +26,12 @@ export default function Home() {
             <h6>I am a</h6>
             <h6>Software Developer</h6>
             <br />
+            <small className='text-muted'>
+              🌱🌱 Now I'm working as a REACT JS Developer at
+              https://lemmesaybd.app/ .Since (March 2022) 🌱🌱
+            </small>
+            <br />
+            <br />
             <p className='text-muted'>
               <BlockContent
                 blocks={author?.bio}
@@ -39,7 +45,7 @@ export default function Home() {
                   <li>
                     <b>NAME</b>
                   </li>
-                  <li>MD. Azmir Hossen</li>
+                  <li>MD. Azmir Hossen (Naeem)</li>
                 </ul>
               </li>
               <li>
