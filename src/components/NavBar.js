@@ -5,7 +5,7 @@ import toggleButton from "../img/menu.png";
 export default function Navbar() {
   return (
     <nav class='navbar sticky-top navbar-expand-lg navbar-black bg-black'>
-      <div class='container-fluid'>
+      <div class='container'>
         <button
           class='navbar-toggler'
           type='button'
@@ -25,7 +25,7 @@ export default function Navbar() {
           to='/'
           exact
           activeClassName='text-yellow-300'
-          className='inflex-flex items-center py-3 px-3 mr-4 mt-2 ml-5 text-yellow-300 hover:text-green-800 text-4xl font-bold cursive tracking-widest '
+          className='inflex-flex items-center py-3 px-3 mr-4 mt-2 ml-5 text-yellow-300 hover:text-green-800 text-4xl font-bold  tracking-widest '
         >
           AH Naeem
         </NavLink>
@@ -34,7 +34,7 @@ export default function Navbar() {
             <NavLink
               to='/blog'
               activeClassName='text-yellow-300 bg-red-700'
-              className='inline-flex items-center py-3 px-3 my-3 rounded text-yellow-300 hover:text-green-800'
+              className='inline-flex items-center py-3 px-3 my-3 rounded text-yellow-300 font-bold hover:text-green-800'
             >
               My Projects
             </NavLink>
@@ -48,7 +48,7 @@ export default function Navbar() {
             <NavLink
               activeClassName='text-yellow-300 bg-red-700'
               to='/about'
-              className='inline-flex items-center py-3 px-3 my-3 rounded text-yellow-300 hover:text-green-800'
+              className='inline-flex items-center py-3 px-3 my-3 rounded text-yellow-300 font-bold hover:text-green-800'
             >
               About me!
             </NavLink>
