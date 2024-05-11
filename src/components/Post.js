@@ -11,6 +11,7 @@ export default function Post() {
         `*[_type == "post"]{
                 title,
                 slug,
+                publishedAt,
                 mainImage{
                     asset->{
                         _id,
@@ -20,7 +21,16 @@ export default function Post() {
                 }
             }`
       )
-      .then((data) => setPostData(data))
+      .then((data) => {
+        var mainPosts = data;
+        mainPosts.sort(function (a, b) {
+          // Turn your strings into dates, and then subtract them
+          // to get a value that is either negative, positive, or zero.
+          return new Date(b.publishedAt) - new Date(a.publishedAt);
+        });
+
+        setPostData(mainPosts);
+      })
       .catch(console.error);
   }, []);
 
